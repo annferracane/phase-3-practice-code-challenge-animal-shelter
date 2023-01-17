@@ -11,7 +11,8 @@ class Pet < ActiveRecord::Base
     end
 
     def in_dog_years
-        self.species == "canine" ? self.age * 5 : "This is a #{self.species}, not a canine! We cannot calculate age in 'dog years'."
+        self.species == "canine" ?
+        self.age * 5
     end
 
 end

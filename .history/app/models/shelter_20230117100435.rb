@@ -7,7 +7,8 @@ class Shelter < ActiveRecord::Base
     end
     
     def adopted_pets
-        self.pets.where(adopted?: true)
+        self.pets.where(adopted?: false)
+
     end
 
 end

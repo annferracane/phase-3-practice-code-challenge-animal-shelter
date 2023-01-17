@@ -11,7 +11,7 @@ class Adopter < ActiveRecord::Base
             if !pet.adopted?
                 pet.update(adopted?: true, adopter_id: self.id)
             else
-                "#{pet.name} has already been adopted by #{pet.adopter.full_name}!"
+                "You are trying to adopt a/an #{pet.class}. You can only adopt a real pet!"
             end 
         else
             "You are trying to adopt a/an #{pet.class}. You can only adopt a real pet!"

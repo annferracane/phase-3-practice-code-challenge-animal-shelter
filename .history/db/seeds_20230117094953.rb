@@ -1,0 +1,1 @@
+Pet.new(name: "", age: 1, species: "canine", )
